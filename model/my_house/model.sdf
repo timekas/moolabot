@@ -1,0 +1,709 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="my_house">
+
+    <static>1</static>
+    <link name="link">
+      <collision name="collision">
+	<pose>0 0 -0.003 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/uneven.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>0 0 -0.003 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/uneven.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>150 75 0 1</ambient>
+          <diffuse>150 75 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree1">
+      <collision name="collision">
+	<pose>3 3 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>3 3 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree2">
+      <collision name="collision">
+	<pose>2 2 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>2 2 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree3">
+      <collision name="collision">
+	<pose>-3 -3 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>-3 -3 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree4">
+      <collision name="collision">
+	<pose>6 6 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>6 6 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree5">
+      <collision name="collision">
+	<pose>-6 6 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>-6 6 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree6">
+      <collision name="collision">
+	<pose>9 -9 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>9 -9 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree7">
+      <collision name="collision">
+	<pose>6 -7 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>6 -7 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree8">
+      <collision name="collision">
+	<pose>1 1 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>1 1 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree9">
+      <collision name="collision">
+	<pose>7.5 -7.5 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>7.5 -7.5 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="onion1">
+      <collision name="collision">
+	<pose>7 2 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>2 2 2</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>7 2 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="onion2">
+      <collision name="collision">
+	<pose>7 -2 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>7 -2 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>2 2 2</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="onion3">
+      <collision name="collision">
+	<pose>-7 -2 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>2 2 2</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>-7 -2 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="onion4">
+      <collision name="collision">
+	<pose>-7 2 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>2 2 2</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>-7 2 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="onion5">
+      <collision name="collision">
+	<pose>7 3 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>2 2 2</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>7 3 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>2 2 2</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="onion6">
+      <collision name="collision">
+	<pose>7 -3 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>2 2 2</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>7 -3 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>2 2 2</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="onion7">
+      <collision name="collision">
+	<pose>-7 -3 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>2 2 2</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>-7 -3 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>2 2 2</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="onion8">
+      <collision name="collision">
+	<pose>-7 3 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>-7 3 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/onion.dae</uri>
+              <scale>2 2 2</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree10">
+      <collision name="collision">
+	<pose>8 4 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>8 4 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree11">
+      <collision name="collision">
+	<pose>8 -4 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>8 -4 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree12">
+      <collision name="collision">
+	<pose>-8 -4 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>-8 -4 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree13">
+      <collision name="collision">
+	<pose>-8 4 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>-8 4 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree14">
+      <collision name="collision">
+	<pose>8 6 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>8 6 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree15">
+      <collision name="collision">
+	<pose>-8 -6 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>-8 -6 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree16">
+      <collision name="collision">
+	<pose>8 -6 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>8 -7 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree17">
+      <collision name="collision">
+	<pose>-8 6 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>-8 6 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name="tree17">
+      <collision name="collision">
+	<pose>6 8 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<pose>6 8 -0.004 0 0 0</pose>
+        <geometry>
+            <mesh>
+              <uri>model://my_house/meshes/trees.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+        <material>
+          <ambient>0 128 0 1</ambient>
+          <diffuse>0 128 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

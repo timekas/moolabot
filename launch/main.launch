@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <include file="$(find moolabot)/launch/spawn.launch">
+    <arg name="x" default="0.0" />
+    <arg name="y" default="0.0" />
+    <arg name="z" default="0.0" />
+        <arg name="robot_name" value="moolabot" />
+    </include>
+
+</launch>
