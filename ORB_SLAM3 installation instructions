@@ -1,0 +1,103 @@
+Install dependencies
+
+
+sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
+sudo apt update
+
+sudo apt-get install build-essential
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+
+sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-22-dev libjasper-dev
+
+sudo apt-get install libglew-dev libboost-all-dev libssl-dev
+
+sudo apt install libeigen3-dev
+
+
+
+Use directory Dev under Home
+do: sudo chown -R dev Dev
+to chnage ownership of the folder
+-----------------------------------------------------------
+Download and install Eigen from source.
+
+cd /path/to/working/dir
+wget -q https://gitlab.com/libeigen/eigen/-/archive/3.3.7/eigen-3.3.7.tar.bz2
+tar xf eigen-3.3.7.tar.bz2
+rm -rf eigen-3.3.7.tar.bz2
+cd eigen-3.3.7
+mkdir -p build && cd build
+cmake \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr/local \
+    ..
+make -j4
+make install
+
+----------------------------------------------------------
+
+Install OpenCV 3.2.0
+The ORB-SLAM 3 was test by
+
+cd ~
+mkdir Dev && cd Dev
+git clone https://github.com/opencv/opencv.git
+cd opencv
+git checkout 3.2.0
+Put the following at the top of header file gedit ./modules/videoio/src/cap_ffmpeg_impl.hpp
+#define AV_CODEC_FLAG_GLOBAL_HEADER (1 << 22)
+#define CODEC_FLAG_GLOBAL_HEADER AV_CODEC_FLAG_GLOBAL_HEADER
+#define AVFMT_RAWPICTURE 0x0020
+and save and close the file
+
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DWITH_CUDA=OFF -D CMAKE_INSTALL_PREFIX=/usr/local ..
+make -j 3
+sudo make install
+
+-----------------------------------------------------------
+
+Install Pangolin
+
+cd /path/to/working/dir
+git clone https://github.com/stevenlovegrove/Pangolin.git
+cd Pangolin
+git checkout ad8b5f83222291c51b4800d5a5873b0e90a0cf81
+mkdir build && cd build
+cmake \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr/local \
+    ..
+make -j4
+make install
+
+----------------------------------------------------------
+Building ORB-SLAM3 library and examples
+
+Download v0.3-beta as zip
+
+cd ORB_SLAM3
+chmod +x build.sh
+./build.sh
+
+--------------------------------------------------------
+
+install rosdep
+
+sudo apt-get install python-rosdep
+sudo rosdep init 
+rosdep update
+
+----------------------------------------------------
+Building the nodes for mono, mono-inertial, stereo, stereo-inertial and RGB-D
+Tested with ROS Melodic and ubuntu 18.04.
+
+Add the path including Examples/ROS/ORB_SLAM3 to the ROS_PACKAGE_PATH environment variable. Open .bashrc file:
+gedit ~/.bashrc
+and add at the end the following line. Replace PATH by the folder where you cloned ORB_SLAM3:
+
+export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:PATH/ORB_SLAM3/Examples/ROS
+Execute build_ros.sh script:
+chmod +x build_ros.sh
+./build_ros.sh
